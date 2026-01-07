@@ -1,0 +1,815 @@
+<!doctype html>
+<html lang="fr-CH">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CGV — Nat Patoun | Trame à valider (Responsabilité éditoriale)</title>
+  <meta name="description" content="Conditions Générales de Vente (CGV) Nat Patoun — garde de chats à domicile (Suisse/VD). Document trame à valider avant publication." />
+  <meta name="robots" content="index,follow" />
+  <link rel="canonical" href="https://nat-patoune.ch/cgv" />
+
+  <style>
+    :root{
+      /* Charte Nat’Pattoune */
+      --violet:#A98BDA;
+      --beige:#F2EEE3;
+      --rose:#E8B7C9;
+      --vert:#B2C2A6;
+      --blanc:#FFFFFF;
+      --gris:#E2E2E2;
+
+      /* Lisibilité */
+      --texte:#1a1a1a;
+      --muted:#404040;
+      --fond:linear-gradient(180deg, var(--beige), #fff);
+      --carte:rgba(255,255,255,0.82);
+      --bord:rgba(26,26,26,0.10);
+      --ombre:0 10px 30px rgba(0,0,0,0.08);
+
+      --radius:18px;
+      --max:1100px;
+    }
+
+    *{ box-sizing:border-box; }
+    html,body{ height:100%; }
+    body{
+      margin:0;
+      color:var(--texte);
+      background:var(--fond);
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      line-height:1.65;
+      font-size:16px;
+    }
+
+    a{ color:inherit; text-decoration:underline; text-underline-offset:3px; text-decoration-thickness:1px; }
+    a:hover{ opacity:0.88; }
+
+    .wrap{ max-width:var(--max); margin:0 auto; padding:26px 18px 60px; }
+    header{
+      background:
+        radial-gradient(1200px 500px at 10% 0%, rgba(169,139,218,0.38), transparent 60%),
+        radial-gradient(1200px 500px at 90% 0%, rgba(232,183,201,0.30), transparent 60%),
+        rgba(255,255,255,0.60);
+      border:1px solid var(--bord);
+      border-radius:var(--radius);
+      box-shadow:var(--ombre);
+      padding:20px 18px;
+      overflow:hidden;
+    }
+
+    .topline{
+      display:flex;
+      align-items:flex-start;
+      justify-content:space-between;
+      gap:14px;
+      flex-wrap:wrap;
+    }
+
+    h1{
+      margin:0;
+      font-size:clamp(24px, 3vw, 34px);
+      line-height:1.15;
+      letter-spacing:0.2px;
+    }
+
+    .badge{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding:8px 12px;
+      border-radius:999px;
+      border:1px solid var(--bord);
+      background:rgba(255,255,255,0.72);
+      font-size:13px;
+      color:var(--muted);
+      white-space:nowrap;
+    }
+
+    .sub{
+      margin-top:10px;
+      color:var(--muted);
+      max-width:85ch;
+    }
+
+    .actions{
+      display:flex;
+      gap:10px;
+      flex-wrap:wrap;
+      margin-top:14px;
+    }
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      padding:10px 14px;
+      border-radius:12px;
+      border:1px solid var(--bord);
+      background:rgba(255,255,255,0.88);
+      cursor:pointer;
+      text-decoration:none;
+      font-weight:700;
+    }
+    .btn.primary{
+      background:linear-gradient(180deg, rgba(169,139,218,0.55), rgba(169,139,218,0.20));
+      border-color:rgba(169,139,218,0.55);
+    }
+    .btn.secondary{
+      background:linear-gradient(180deg, rgba(178,194,166,0.55), rgba(178,194,166,0.20));
+      border-color:rgba(178,194,166,0.55);
+    }
+
+    .grid{
+      display:grid;
+      grid-template-columns: 320px 1fr;
+      gap:16px;
+      margin-top:16px;
+    }
+    @media (max-width: 920px){
+      .grid{ grid-template-columns: 1fr; }
+    }
+
+    nav{
+      position:sticky;
+      top:12px;
+      align-self:start;
+      background:var(--carte);
+      border:1px solid var(--bord);
+      border-radius:var(--radius);
+      box-shadow:var(--ombre);
+      padding:14px;
+    }
+    nav h2{
+      margin:0 0 10px;
+      font-size:16px;
+      letter-spacing:0.2px;
+    }
+    .toc{ margin:0; padding-left:18px; }
+    .toc li{ margin:6px 0; }
+    .toc a{ text-decoration:none; }
+    .toc a:hover{ text-decoration:underline; }
+
+    main{
+      background:var(--carte);
+      border:1px solid var(--bord);
+      border-radius:var(--radius);
+      box-shadow:var(--ombre);
+      padding:18px 18px 8px;
+      overflow:hidden;
+    }
+
+    section{
+      padding:8px 0 18px;
+      border-top:1px solid rgba(0,0,0,0.06);
+    }
+    section:first-of-type{ border-top:none; }
+    section h2{ margin:10px 0 8px; font-size:20px; }
+    section h3{ margin:14px 0 8px; font-size:16px; }
+
+    .muted{ color:var(--muted); }
+
+    .callout{
+      border-left:6px solid var(--violet);
+      background:rgba(169,139,218,0.10);
+      border-radius:12px;
+      padding:12px 12px;
+      margin:12px 0 6px;
+    }
+    .ok{ border-left-color:var(--vert); background:rgba(178,194,166,0.14); }
+    .warn{ border-left-color:var(--rose); background:rgba(232,183,201,0.14); }
+
+    .kpi{
+      display:grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap:10px;
+      margin-top:12px;
+    }
+    @media (max-width: 720px){
+      .kpi{ grid-template-columns:1fr; }
+    }
+    .card{
+      border:1px solid var(--bord);
+      border-radius:14px;
+      padding:12px;
+      background:rgba(255,255,255,0.88);
+    }
+    .card b{ display:block; margin-bottom:4px; }
+
+    table{
+      width:100%;
+      border-collapse:collapse;
+      margin-top:10px;
+      border-radius:12px;
+      overflow:hidden;
+      border:1px solid var(--bord);
+      background:rgba(255,255,255,0.88);
+    }
+    th,td{
+      text-align:left;
+      padding:10px;
+      border-bottom:1px solid rgba(0,0,0,0.06);
+      vertical-align:top;
+    }
+    th{ font-size:14px; background:rgba(242,238,227,0.55); }
+    tr:last-child td{ border-bottom:none; }
+
+    details{
+      border:1px solid var(--bord);
+      border-radius:12px;
+      background:rgba(255,255,255,0.88);
+      padding:10px 12px;
+      margin-top:10px;
+    }
+    details > summary{
+      cursor:pointer;
+      font-weight:800;
+    }
+
+    .accept{
+      display:flex;
+      gap:10px;
+      align-items:flex-start;
+      padding:12px;
+      margin:12px 0 10px;
+      border-radius:14px;
+      border:1px solid var(--bord);
+      background:rgba(255,255,255,0.92);
+    }
+    .accept input{ margin-top:4px; }
+    .accept small{ display:block; color:var(--muted); margin-top:4px; }
+
+    footer{
+      margin-top:12px;
+      color:var(--muted);
+      font-size:13px;
+    }
+
+    /* Impression */
+    @media print{
+      body{ background:#fff; }
+      header, nav, .actions, .print-hide{ display:none !important; }
+      main{ box-shadow:none; border:none; background:#fff; padding:0; }
+      a{ text-decoration:none; }
+      .wrap{ padding:0; }
+      section{ page-break-inside:avoid; }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <header>
+      <div class="topline">
+        <div>
+          <h1>Conditions Générales de Vente (CGV) — Nat Patoun</h1>
+          <div class="sub">
+            Garde de chats à domicile (Cat sitting) — Suisse (Vaud).<br />
+            <b>Document trame</b> destiné à servir de base de travail avant publication.
+          </div>
+        </div>
+
+        <div class="badge" title="Version et date de référence">
+          Version <span id="cgvVersion">2.0</span> • Mise à jour <span id="cgvDate">24 décembre 2025</span>
+        </div>
+      </div>
+
+      <div class="actions print-hide">
+        <button class="btn" type="button" onclick="window.print()">Imprimer</button>
+        <!-- Ajustez ces liens selon votre site -->
+        <a class="btn primary" href="/docs/CGV_Nat_Patoun_Cat_Sitting.pdf" target="_blank" rel="noopener">Télécharger CGV (PDF)</a>
+        <a class="btn secondary" href="/docs/Tarifs_par_zone.pdf" target="_blank" rel="noopener">Télécharger tarifs (PDF)</a>
+      </div>
+
+      <div class="callout warn">
+        <b>Avertissement (responsabilité éditoriale / juridique)</b><br />
+        Cette page est une <b>trame</b> de CGV structurée pour un service de garde de chats. Le rédacteur technique n’est pas juriste.
+        <b>Avant publication</b>, la responsable/exploitante du service doit relire, adapter et valider le contenu (idéalement avec un conseil juridique),
+        car la mise en ligne et l’utilisation de ces CGV <b>engagent sa responsabilité</b>.
+      </div>
+
+      <div class="kpi">
+        <div class="card">
+          <b>Coordonnées (à valider)</b>
+          <div class="muted">
+            Nat Patoun — Route Cantonale 1A, 1113 Saint-Saphorin-sur-Morges (VD)<br />
+            078 768 50 47 • <a href="mailto:miaou@nat-patoune.ch">miaou@nat-patoune.ch</a>
+          </div>
+        </div>
+        <div class="card">
+          <b>À compléter</b>
+          <div class="muted">
+            Forme juridique : [Entreprise individuelle / Sàrl]<br />
+            Responsable : [Nom & prénom]<br />
+            IDE : [Numéro IDE si applicable]
+          </div>
+        </div>
+        <div class="card">
+          <b>Points sensibles à valider</b>
+          <div class="muted">
+            Tarifs/annulation, urgences vétérinaires, responsabilité, données (LPD), assurance RC, for juridique.
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="grid">
+      <nav aria-label="Sommaire">
+        <h2>Sommaire</h2>
+        <ol class="toc">
+          <li><a href="#identification">1. Identification</a></li>
+          <li><a href="#definitions">2. Définitions</a></li>
+          <li><a href="#objet">3. Objet & champ d’application</a></li>
+          <li><a href="#zone">4. Zone d’intervention</a></li>
+          <li><a href="#prestations">5. Prestations</a></li>
+          <li><a href="#previsite">6. Pré-visite</a></li>
+          <li><a href="#reservation">7. Réservation & documents</a></li>
+          <li><a href="#acces">8. Accès au domicile, clés, sécurité</a></li>
+          <li><a href="#tarifs">9. Tarifs</a></li>
+          <li><a href="#paiement">10. Paiement</a></li>
+          <li><a href="#modif">11. Modifications & prolongations</a></li>
+          <li><a href="#annulation">12. Annulation</a></li>
+          <li><a href="#indispo">13. Indisponibilité / remplacement</a></li>
+          <li><a href="#urgences">14. Urgences vétérinaires</a></li>
+          <li><a href="#responsabilites">15. Responsabilités & assurance</a></li>
+          <li><a href="#refus">16. Refus / interruption</a></li>
+          <li><a href="#photos">17. Photos & communication</a></li>
+          <li><a href="#donnees">18. Protection des données</a></li>
+          <li><a href="#force">19. Force majeure</a></li>
+          <li><a href="#droit">20. Droit applicable & for</a></li>
+          <li><a href="#final">21. Dispositions finales</a></li>
+          <li><a href="#acceptation">Acceptation (formulaire)</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ol>
+
+        <div class="callout ok" style="margin-top:12px;">
+          <b>Recommandation</b><br />
+          Ajoutez un lien “CGV” en pied de page et imposez l’acceptation sur le formulaire de réservation.
+        </div>
+      </nav>
+
+      <main>
+        <section id="identification">
+          <h2>1. Identification du Prestataire (à valider)</h2>
+          <p><b>Nat Patoun</b> — Service de garde de chats à domicile (cat sitting).</p>
+          <ul>
+            <li>Forme juridique : <b>[à compléter]</b></li>
+            <li>Responsable : <b>[à compléter]</b></li>
+            <li>Adresse : Route Cantonale 1A, 1113 Saint-Saphorin-sur-Morges (VD), Suisse</li>
+            <li>Téléphone : 078 768 50 47</li>
+            <li>E-mail : <a href="mailto:miaou@nat-patoune.ch">miaou@nat-patoune.ch</a></li>
+            <li>IDE : <b>[à compléter si applicable]</b></li>
+            <li>Site : <a href="https://nat-patoune.ch" target="_blank" rel="noopener">https://nat-patoune.ch</a></li>
+          </ul>
+          <div class="callout warn">
+            <b>Note</b> : les informations d’identité (raison sociale, IDE, responsable, adresse officielle) doivent être cohérentes avec vos documents (factures, contrat, mentions légales).
+          </div>
+        </section>
+
+        <section id="definitions">
+          <h2>2. Définitions</h2>
+          <ul>
+            <li><b>Client</b> : toute personne physique ou morale réservant une prestation.</li>
+            <li><b>Prestations / Visites</b> : interventions au domicile du Client pour la garde du/des chat(s).</li>
+            <li><b>Pré-visite</b> : rencontre préalable au domicile du Client avant une première garde.</li>
+            <li><b>Devis</b> : récapitulatif écrit (dates, fréquence, tarif, options) avant confirmation.</li>
+          </ul>
+        </section>
+
+        <section id="objet">
+          <h2>3. Objet & champ d’application</h2>
+          <p>
+            Les présentes CGV encadrent l’ensemble des relations contractuelles entre le Prestataire et le Client pour toute prestation
+            de garde de chats à domicile. Toute demande de réservation implique l’acceptation des CGV (signature, e-mail d’accord,
+            ou validation via formulaire).
+          </p>
+          <p>
+            En cas de divergence entre cette page et un devis/contrat signé, <b>le document signé prévaut</b>.
+          </p>
+        </section>
+
+        <section id="zone">
+          <h2>4. Zone d’intervention</h2>
+          <p>
+            Le Prestataire intervient selon un zonage tarifaire (Morges, Ouest lausannois/Lausanne, Echallens et environs) tel que défini
+            dans la liste des communes et le document “Tarifs par zone”.
+          </p>
+          <p>
+            Hors périmètre, un devis spécifique peut être établi (déplacement, faisabilité, conditions).
+          </p>
+        </section>
+
+        <section id="prestations">
+          <h2>5. Prestations</h2>
+
+          <h3>5.1 Prestations incluses lors d’une visite (socle)</h3>
+          <p>Sauf mention contraire au devis, une visite peut inclure :</p>
+          <ul>
+            <li>nourrissage et renouvellement de l’eau,</li>
+            <li>nettoyage de la litière,</li>
+            <li>présence, jeux, interactions selon tempérament,</li>
+            <li>vérification sécurité (portes/fenêtres/accès),</li>
+            <li>relevé courrier et contrôle général du domicile,</li>
+            <li>arrosage des plantes (selon consigne et surface),</li>
+            <li>envoi de nouvelles (message/photo) selon canal convenu.</li>
+          </ul>
+
+          <h3>5.2 Bien-être animal et limites</h3>
+          <p>
+            Le Prestataire agit avec diligence et bon sens, dans l’intérêt du chat, sans se substituer à un vétérinaire.
+            Les soins “techniques” ou complexes (médicaments difficiles, manipulations à risque, etc.) peuvent faire l’objet de conditions
+            particulières au devis.
+          </p>
+        </section>
+
+        <section id="previsite">
+          <h2>6. Pré-visite (premier Client)</h2>
+          <p>
+            Avant toute première garde, une pré-visite au domicile est réalisée pour : rencontrer le(s) chat(s), vérifier l’environnement,
+            valider les consignes (alimentation, litière, habitudes), récupérer clés/codes, compléter les informations (vétérinaire, urgences).
+          </p>
+          <div class="callout ok">
+            <b>Offre de lancement</b> : la pré-visite est offerte, sauf exception mentionnée au devis.
+          </div>
+        </section>
+
+        <section id="reservation">
+          <h2>7. Réservation & documents requis</h2>
+
+          <h3>7.1 Demande</h3>
+          <p>La demande peut être faite par téléphone, e-mail, WhatsApp ou formulaire en ligne.</p>
+
+          <h3>7.2 Confirmation</h3>
+          <p>
+            La réservation est confirmée après accord écrit sur le devis et acceptation des CGV, et paiement de l’acompte si applicable.
+          </p>
+
+          <h3>7.3 Informations indispensables (au plus tard avant la première visite)</h3>
+          <ul>
+            <li>informations exactes sur le(s) chat(s) (santé, comportement, alimentation),</li>
+            <li>coordonnées du vétérinaire habituel + contact d’urgence,</li>
+            <li>autorisation de soins d’urgence et plafond de dépenses (si prévu),</li>
+            <li>consignes d’accès (clés, alarme, parking, zones interdites).</li>
+          </ul>
+        </section>
+
+        <section id="acces">
+          <h2>8. Accès au domicile, clés, sécurité</h2>
+
+          <h3>8.1 Remise des clés / codes</h3>
+          <p>Le Client remet tous moyens d’accès nécessaires (clés, badges, codes, instructions alarme) et garantit leur bon fonctionnement.</p>
+
+          <h3>8.2 Conservation et restitution</h3>
+          <p>Les clés sont conservées de manière sécurisée et restituées selon modalités convenues.</p>
+
+          <h3>8.3 Indisponibilité d’accès</h3>
+          <p>
+            Si le Prestataire ne peut accéder au domicile (mauvaise clé, alarme non désactivée, accès bloqué, etc.), la visite est considérée
+            comme due dès lors que le Prestataire s’est déplacé, sauf preuve d’une faute exclusive du Prestataire.
+          </p>
+
+          <h3>8.4 Caméras / surveillance</h3>
+          <p>Le Client informe le Prestataire de l’existence de caméras ou systèmes d’enregistrement au domicile, et respecte la législation applicable.</p>
+        </section>
+
+        <section id="tarifs">
+          <h2>9. Tarifs</h2>
+
+          <h3>9.1 Tarifs par zone (max. 2 chats)</h3>
+          <table aria-label="Tarifs par zone">
+            <thead>
+              <tr>
+                <th>Zone</th>
+                <th>Tarif / visite</th>
+                <th>Périmètre</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><b>Zone 1</b></td>
+                <td><b>CHF 30.–</b></td>
+                <td>Morges et environs</td>
+              </tr>
+              <tr>
+                <td><b>Zone 2</b></td>
+                <td><b>CHF 35.–</b></td>
+                <td>Ouest lausannois & Lausanne</td>
+              </tr>
+              <tr>
+                <td><b>Zone 3</b></td>
+                <td><b>CHF 40.–</b></td>
+                <td>Echallens et environs</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h3>9.2 Chats supplémentaires</h3>
+          <p>Au-delà de 2 chats : majoration de <b>CHF 5.– par chat</b> et par visite.</p>
+
+          <h3>9.3 Stationnement</h3>
+          <p>Supplément de <b>CHF 2.–</b> par visite si absence de stationnement gratuit à proximité.</p>
+
+          <h3>9.4 Prestations hors standard</h3>
+          <p>Toute demande hors cadre (temps de visite très supérieur, contraintes particulières, soins lourds) peut être facturée sur devis.</p>
+        </section>
+
+        <section id="paiement">
+          <h2>10. Modalités de paiement</h2>
+
+          <h3>10.1 Acompte</h3>
+          <p>
+            Sauf mention contraire au devis, un acompte de <b>30%</b> peut être demandé pour valider la réservation (notamment périodes chargées
+            ou gardes longues). Délai de paiement recommandé : <b>5 jours</b> après confirmation, sauf urgence/exception.
+          </p>
+
+          <h3>10.2 Solde</h3>
+          <p>Le solde est dû selon modalités fixées au devis (avant départ, ou à la restitution des clés, etc.).</p>
+
+          <h3>10.3 Moyens acceptés</h3>
+          <p>Selon devis : espèces, virement bancaire, TWINT, ou tout autre moyen explicitement accepté.</p>
+
+          <h3>10.4 Retard de paiement (à valider)</h3>
+          <p>
+            En cas de retard, un rappel peut être facturé (frais administratifs) et des intérêts moratoires peuvent être appliqués selon le droit suisse,
+            sauf accord contraire au devis/contrat.
+          </p>
+          <div class="callout warn">
+            <b>À valider</b> : les frais de rappel et intérêts doivent être décidés et assumés par l’exploitante (cohérence avec facturation réelle).
+          </div>
+        </section>
+
+        <section id="modif">
+          <h2>11. Modifications, prolongations, visites supplémentaires</h2>
+          <p>
+            Toute modification (dates, fréquence, consignes) doit être demandée dès que possible. Toute prolongation ou visite additionnelle dépend
+            des disponibilités du Prestataire et fait l’objet d’une confirmation écrite.
+          </p>
+        </section>
+
+        <section id="annulation">
+          <h2>12. Conditions d’annulation</h2>
+
+          <h3>12.1 Annulation par le Client (trame)</h3>
+          <ul>
+            <li><b>Plus de 7 jours</b> avant : annulation sans frais (acompte remboursé).</li>
+            <li><b>Entre 3 et 7 jours</b> avant : retenue de <b>50%</b> de l’acompte.</li>
+            <li><b>Moins de 3 jours</b> avant : <b>aucun remboursement</b> (garde due selon conditions du devis).</li>
+          </ul>
+
+          <h3>12.2 Retour anticipé</h3>
+          <p>En cas de retour anticipé, les visites non effectuées ne sont pas remboursées, sauf cas exceptionnel accepté par le Prestataire.</p>
+
+          <div class="callout warn">
+            <b>À valider</b> : ces règles d’annulation doivent correspondre à votre politique commerciale réelle et être assumées par l’exploitante.
+          </div>
+        </section>
+
+        <section id="indispo">
+          <h2>13. Indisponibilité du Prestataire / remplacement</h2>
+          <p>
+            En cas d’empêchement sérieux (maladie, accident, événement majeur), le Prestataire s’efforce de proposer une solution de remplacement qualifiée ;
+            à défaut, les sommes encaissées pour les visites non réalisées sont remboursées, sans pénalité supplémentaire.
+          </p>
+        </section>
+
+        <section id="urgences">
+          <h2>14. Urgences vétérinaires</h2>
+
+          <h3>14.1 Autorisation</h3>
+          <p>
+            Le Client autorise le Prestataire à faire consulter le chat en cas d’urgence avérée (accident, maladie soudaine, blessure), selon l’autorisation signée (si prévue).
+          </p>
+
+          <h3>14.2 Vétérinaire</h3>
+          <p>Priorité au vétérinaire habituel ; à défaut, recours au service d’urgence le plus proche.</p>
+
+          <h3>14.3 Frais</h3>
+          <p>Les frais vétérinaires sont à la charge du Client (consultation, examens, traitements, hospitalisation, etc.).</p>
+
+          <h3>14.4 Plafond de dépenses (trame)</h3>
+          <div class="callout warn">
+            Sauf accord écrit autorisant un montant supérieur, le Prestataire est autorisé à engager des frais vétérinaires d’urgence jusqu’à <b>CHF 500.–</b>.
+            Au-delà, le Client est contacté, sauf urgence vitale.
+          </div>
+
+          <div class="callout warn">
+            <b>À valider</b> : le plafond et la procédure doivent être cohérents avec vos documents (contrat, autorisation vétérinaire) et votre pratique.
+          </div>
+        </section>
+
+        <section id="responsabilites">
+          <h2>15. Responsabilités & assurances</h2>
+
+          <h3>15.1 Obligations du Prestataire</h3>
+          <p>
+            Le Prestataire s’engage à effectuer les visites convenues, appliquer les consignes, assurer la confidentialité et informer le Client en cas d’anomalie.
+          </p>
+
+          <h3>15.2 Obligations du Client</h3>
+          <ul>
+            <li>fournir des informations complètes et exactes (santé, comportement, traitements),</li>
+            <li>mettre à disposition nourriture, litière, matériel suffisant,</li>
+            <li>maintenir un accès sécurisé et un domicile compatible avec la prestation,</li>
+            <li>rester joignable (ou fournir un contact d’urgence).</li>
+          </ul>
+
+          <h3>15.3 Limitation de responsabilité (principes)</h3>
+          <p>
+            Sauf faute prouvée du Prestataire, celui-ci ne peut être tenu responsable notamment des problèmes préexistants non signalés,
+            des dommages causés par le chat, d’actes de tiers (vol, dégradations) sans faute du Prestataire, ou des cas de force majeure.
+          </p>
+
+          <h3>15.4 Assurance</h3>
+          <p>Le Prestataire déclare disposer d’une assurance RC professionnelle (références communiquées sur demande ou au contrat).</p>
+
+          <div class="callout warn">
+            <b>À valider</b> : la clause de responsabilité et la mention d’assurance doivent être exactes (contrat d’assurance réellement en vigueur).
+          </div>
+        </section>
+
+        <section id="refus">
+          <h2>16. Refus / interruption de prestation</h2>
+          <p>
+            Le Prestataire peut refuser ou interrompre une garde en cas d’agressivité dangereuse, risques sanitaires, domicile manifestement dangereux,
+            informations mensongères, consignes incompatibles avec la sécurité, ou impossibilité d’accès répétée.
+          </p>
+          <p>Les visites déjà effectuées restent dues ; l’acompte peut être conservé selon les frais engagés.</p>
+        </section>
+
+        <section id="photos">
+          <h2>17. Photos, rapports, communication</h2>
+          <p>
+            Sauf impossibilité technique, le Prestataire envoie des nouvelles pendant l’absence (message/photos), selon canal choisi (WhatsApp/SMS/e-mail).
+            La publication de photos (site/réseaux sociaux) nécessite l’accord préalable du Client (opt-in écrit).
+          </p>
+        </section>
+
+        <section id="donnees">
+          <h2>18. Protection des données</h2>
+
+          <h3>18.1 Données collectées</h3>
+          <p>
+            Données nécessaires à l’exécution du contrat : coordonnées du Client, informations sur le(s) chat(s), vétérinaire, contact d’urgence,
+            consignes et informations d’accès.
+          </p>
+
+          <h3>18.2 Finalités</h3>
+          <p>Exécution des prestations, communication, urgences, gestion administrative et comptable.</p>
+
+          <h3>18.3 Conservation (trame)</h3>
+          <p>
+            Conservation possible jusqu’à <b>5 ans</b> après la dernière prestation (motifs comptables/légaux), puis suppression sécurisée,
+            sauf obligation différente.
+          </p>
+
+          <h3>18.4 Droits du Client</h3>
+          <p>Droit d’accès, rectification, opposition et suppression lorsque applicable ; demandes par e-mail ou courrier.</p>
+
+          <div class="callout warn">
+            <b>À valider</b> : politique de données (durées, finalités, droits, modalités) et conformité à la LPD doivent être confirmées par l’exploitante.
+          </div>
+        </section>
+
+        <section id="force">
+          <h2>19. Force majeure</h2>
+          <p>
+            Sont considérés comme force majeure des événements extérieurs, extraordinaires, imprévisibles et insurmontables rendant l’exécution impossible
+            (catastrophes, décisions des autorités, interruptions majeures, etc.). Les obligations sont suspendues pendant la durée de l’empêchement.
+          </p>
+        </section>
+
+        <section id="droit">
+          <h2>20. Droit applicable, médiation, for juridique</h2>
+          <p>Le contrat est régi par le <b>droit suisse</b>.</p>
+          <p>
+            En cas de litige, les parties cherchent une solution amiable ; à défaut, une médiation peut être proposée.
+            For juridique : tribunal compétent du domicile/siège du Prestataire, sous réserve des dispositions impératives.
+          </p>
+
+          <div class="callout warn">
+            <b>À valider</b> : le for juridique et les formulations doivent être adaptés à votre structure et à votre situation.
+          </div>
+        </section>
+
+        <section id="final">
+          <h2>21. Dispositions finales</h2>
+          <ul>
+            <li><b>Nullité partielle</b> : si une clause est invalide, le reste demeure applicable.</li>
+            <li><b>Mise à jour</b> : le Prestataire peut modifier les CGV ; la version applicable est celle acceptée lors de la réservation.</li>
+            <li><b>Langue</b> : la version française prévaut.</li>
+          </ul>
+
+          <div class="callout warn">
+            <b>Responsabilité</b> : la publication et l’application de ces CGV relèvent de l’exploitante Nat Patoun, qui doit les valider avant mise en ligne.
+          </div>
+        </section>
+
+        <section id="acceptation">
+          <h2>Acceptation (à intégrer sur le formulaire HTML)</h2>
+
+          <div class="accept">
+            <input id="acceptCgv" type="checkbox" />
+            <div>
+              <label for="acceptCgv"><b>Je confirme avoir lu et accepté les CGV</b> (Nat Patoun).</label>
+              <small>
+                Recommandé : enregistrer la version CGV + l’horodatage au moment de l’envoi (preuve technique).
+              </small>
+              <div style="margin-top:10px; display:flex; gap:10px; flex-wrap:wrap;">
+                <button class="btn primary" id="btnCopy" type="button" disabled>Copier une preuve d’acceptation</button>
+                <a class="btn" href="#identification">Revenir en haut</a>
+              </div>
+              <small id="proof" class="muted" style="margin-top:8px; display:none;"></small>
+            </div>
+          </div>
+
+          <details>
+            <summary>Bloc HTML à copier dans votre formulaire (option recommandé)</summary>
+<pre style="white-space:pre-wrap; margin:10px 0 0;">
+&lt;label&gt;
+  &lt;input type="checkbox" name="cgv_accept" required&gt;
+  J’ai lu et j’accepte les &lt;a href="https://nat-patoune.ch/cgv" target="_blank" rel="noopener"&gt;CGV&lt;/a&gt; (Nat Patoun)
+&lt;/label&gt;
+
+&lt;input type="hidden" name="cgv_version" value="2.0"&gt;
+&lt;input type="hidden" name="cgv_url" value="https://nat-patoune.ch/cgv"&gt;
+&lt;input type="hidden" name="cgv_accepted_at" value="" id="cgvAcceptedAt"&gt;
+
+&lt;script&gt;
+  document.addEventListener('submit', function(){
+    var el = document.getElementById('cgvAcceptedAt');
+    if (el) el.value = new Date().toISOString();
+  }, true);
+&lt;/script&gt;
+</pre>
+          </details>
+
+          <div class="callout ok">
+            <b>Minimum obligatoire</b> : une case “J’ai lu et j’accepte les CGV” avec lien vers la page, en champ requis (<code>required</code>).
+          </div>
+        </section>
+
+        <section id="contact">
+          <h2>Contact</h2>
+          <p><b>Nat Patoun</b></p>
+          <p>
+            Route Cantonale 1A, 1113 Saint-Saphorin-sur-Morges (VD), Suisse<br />
+            Tél. 078 768 50 47<br />
+            E-mail : <a href="mailto:miaou@nat-patoune.ch">miaou@nat-patoune.ch</a><br />
+            Site : <a href="https://nat-patoune.ch" target="_blank" rel="noopener">https://nat-patoune.ch</a>
+          </p>
+
+          <div class="callout ok">
+            <b>Annexes recommandées</b> : Devis/confirmation, contrat de garde, fiche chat & urgences, autorisation vétérinaire, tarifs par zone (PDF).
+          </div>
+        </section>
+
+        <footer class="print-hide">
+          <p>
+            Version <b>2.0</b> — Mise à jour <b>24 décembre 2025</b>. Document trame à valider avant publication.
+          </p>
+        </footer>
+      </main>
+    </div>
+  </div>
+
+  <script>
+    (function(){
+      const version = (document.getElementById('cgvVersion')?.textContent || "2.0").trim();
+      const dateFR = (document.getElementById('cgvDate')?.textContent || "24 décembre 2025").trim();
+
+      const cb = document.getElementById('acceptCgv');
+      const btn = document.getElementById('btnCopy');
+      const proof = document.getElementById('proof');
+
+      function makeProof(){
+        const now = new Date();
+        const iso = now.toISOString();
+        const url = (location && location.href) ? location.href.split('#')[0] : "https://nat-patoune.ch/cgv";
+        return `Acceptation CGV — Nat Patoun | version ${version} (${dateFR}) | URL: ${url} | Horodatage: ${iso}`;
+      }
+
+      function setState(){
+        const ok = !!cb.checked;
+        btn.disabled = !ok;
+        if(!ok){
+          proof.style.display = "none";
+          proof.textContent = "";
+        }
+      }
+
+      cb.addEventListener('change', setState);
+
+      btn.addEventListener('click', async function(){
+        const txt = makeProof();
+        try{
+          await navigator.clipboard.writeText(txt);
+          proof.textContent = "Copié : " + txt;
+        }catch(e){
+          proof.textContent = "Copie non disponible. Texte : " + txt;
+        }
+        proof.style.display = "block";
+      });
+
+      setState();
+    })();
+  </script>
+</body>
+</html>
